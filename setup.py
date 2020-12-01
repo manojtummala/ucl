@@ -5,7 +5,7 @@ setup(
     author = 'Manoj Tummala',
     author_email = 'tummalamanoj2002@gmail.com',
     description = 'Fetches latest updates of news and events and Pretty prints it on terminal.',
-    url='https://github.com/manojtummala/SUP',
+    url='https://github.com/manojtummala/ucl',
     install_requires=[
         'Click', 'requests', 'tabulate'
     ],
