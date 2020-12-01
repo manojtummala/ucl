@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
-    name = 'ucl_sathya',
-    version = '0.2',
+    name = 'sathyabama-updates',
+    version = '0.1',
     author = 'Manoj Tummala',
     author_email = 'tummalamanoj2002@gmail.com',
     description = 'Fetches latest updates of news and events and Pretty prints it on terminal.',
@@ -9,7 +9,7 @@ setup(
     install_requires=[
         'Click', 'requests', 'tabulate'
     ],
-    py_modules=['ucl'],
+    py_modules=['sathya'],
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -18,6 +18,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        sup=source:get
+        sathya=source:get
     ''',
 )
