@@ -1,0 +1,10 @@
+README.md
+setup.py
+sathyabama_updates.egg-info/PKG-INFO
+sathyabama_updates.egg-info/SOURCES.txt
+sathyabama_updates.egg-info/dependency_links.txt
+sathyabama_updates.egg-info/entry_points.txt
+sathyabama_updates.egg-info/requires.txt
+sathyabama_updates.egg-info/top_level.txt
+source/__init__.py
+source/scl.py
