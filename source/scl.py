@@ -1,6 +1,5 @@
 import click
 import requests
-import json
 from tabulate import tabulate
 
 
@@ -26,14 +25,14 @@ def get(section):
     else:
         if section=='news':
             table = make_table(response)
-            print(tabulate(table, headers=["News Title", "Details"],
+            print(tabulate(table, headers=["NEWS"],
                     tablefmt="fancy_grid"))
 
         elif section=='events':
             table = make_table1(response)
-            print(tabulate(table, headers=["Event Title", "Details"],
-                    tablefmt="psql"))
-            tabulate.options.display.max_columns = None
+            print(tabulate(table, headers=["EVENTS"],
+                    tablefmt="fancy_grid"))
+    
         
 
     # click.echo(response.json())
@@ -43,12 +42,7 @@ def make_table(response):
     result = []
     for item in res["list"]:
         new = []
-        new.append(item['News'])
-        new.append((item['Time']))
-        result.append(new)
-    for item in res["list"]:
-        new = []
-        new.append('[Read More]: ' + item['URL'])
+        new.append(item['News'] + '\n' + item['Time'] + '\n' + '[Read More]: ' + item['URL'])
         result.append(new)
 
     return result
@@ -59,9 +53,7 @@ def make_table1(response):
     result = []
     for item in res["list"]:
         new = []
-        new.append(item['Event'][:40] + "\n" + item['Event'][40:75] + "...")
-        new.append(item['Time'] + '\n' + item['Venue'])
-        new.append(item['URL'][:35] + '\n' + item['URL'][35:80] + '\n' + item['URL'][80:])
+        new.append(item['Event'] + '\n' + item['Time'] + '\n' + item['Venue'] + '\n' + '[Read More]: ' + item['URL'])
         result.append(new)
 
     return result
