@@ -3,7 +3,7 @@
 > *Fetch Latest updates from sathyabama-news-api and Pretty Print it on Terminal.*
 
 <p align="center">  
-<img src=".ucl.PNG"/></p><br />
+<img src="ucl.PNG"/></p><br />
 
 ## Install
 ```bash
