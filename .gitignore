@@ -1,2 +1,4 @@
 __pycache__/
-sathyabama_updates.egg-info
+sathyabama_updates.egg-info/
+build/
+dist/
