@@ -58,4 +58,4 @@ sathya news
 ```
 
 ## License
-MIT © Aman Pratap Singh
+MIT © Manoj Tummala
